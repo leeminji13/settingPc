@@ -8,6 +8,12 @@ html,p,span,h1,h2,li{
 /* 공통클래스 */
 .dnone{display: none;}
 .opa0{opacity: 0;}
+.df{display: flex;}
+.dfset{display: flex; align-items: center; justify-content: center;}
+.alcen{align-items: center;}
+.juscen{justify-content: center;}
+.jusbe{justify-content: space-between;}
+.txtcen{text-align: center;}
 
 .pt150{padding-top: 150px;}
 .pt140{padding-top: 140px;}
