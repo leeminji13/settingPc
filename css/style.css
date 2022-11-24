@@ -1,3 +1,81 @@
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4392156863);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+#popup .popImg img {
+  max-width: unset;
+}
+#popup .popBtn {
+  display: flex;
+  align-items: center;
+  width: 1080px;
+  height: 50px;
+}
+#popup .popBtn .today {
+  width: calc(100% - 100px);
+  background-color: #222222;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#popup .popBtn .today span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #999999;
+  margin-left: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#popup .popBtn .today span input {
+  margin: 0;
+  padding: 0;
+  border: unset;
+  box-sizing: unset;
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+}
+#popup .popBtn .today span input:checked {
+  opacity: 1;
+}
+#popup .popBtn .today p {
+  color: #999999;
+  font-size: 0.937rem;
+  padding-left: 10px;
+}
+#popup .popBtn .just_close {
+  background-color: #111111;
+  height: 100%;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#popup .popBtn .just_close p {
+  color: #ffffff;
+  padding-right: 18px;
+  font-size: 0.937rem;
+  background-image: url(/grace/gracepc/img/content/pop_close.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.on {
+  visibility: visible !important;
+}
+
 #gnb {
   display: flex;
   align-items: center;
@@ -38,6 +116,11 @@
 }
 #gnb .d1li:hover:after {
   display: block;
+}
+#gnb .d1li .d1a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #gnb .d1li .d1a p {
   color: #ffffff;
@@ -84,13 +167,15 @@
   max-width: 1920px;
   margin: 0 auto;
 }
-.container .header {
+
+#header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 11;
 }
-.container .header .hdWrap {
+#header .hdWrap {
   width: 1820px;
   margin: 0 auto;
   padding: 0 50px;
@@ -103,7 +188,22 @@
   align-items: center;
   justify-content: space-between;
 }
-.container footer {
+
+#swp .swiper {
+  width: 100%;
+  height: 100%;
+}
+#swp .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(255, 217, 217);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+
+#foot {
   padding: 50px;
   display: flex;
   align-items: flex-start;
@@ -111,59 +211,59 @@
   width: 1820px;
   margin: 5rem auto 0;
 }
-.container footer .foot_left p,
-.container footer .foot_left span {
+#foot .foot_left p,
+#foot .foot_left span {
   font-size: 0.75rem;
   color: #999999;
 }
-.container footer .foot_left .f_txt1 {
+#foot .foot_left .f_txt1 {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
 }
-.container footer .foot_left .f_txt1 p {
+#foot .foot_left .f_txt1 p {
   font-weight: 600;
 }
-.container footer .foot_left .f_txt2 {
+#foot .foot_left .f_txt2 {
   color: #aaaaaa;
   padding-bottom: 30px;
 }
-.container footer .foot_left .f_txt3 {
+#foot .foot_left .f_txt3 {
   color: #aaaaaa;
   padding-bottom: 20px;
 }
 @media (max-width: 1919px) {
-  .container footer .foot_left .f_txt3 {
+  #foot .foot_left .f_txt3 {
     padding-bottom: 1vw;
   }
 }
-.container footer .foot_left .f_txt4 p {
+#foot .foot_left .f_txt4 p {
   color: #aaaaaa;
 }
-.container footer .foot_right {
+#foot .foot_right {
   display: flex;
   align-items: center;
 }
-.container footer .foot_right .asia,
-.container footer .foot_right .buone,
-.container footer .foot_right .dev {
+#foot .foot_right .asia,
+#foot .foot_right .buone,
+#foot .foot_right .dev {
   display: flex;
   align-items: center;
 }
-.container footer .foot_right .asia p,
-.container footer .foot_right .buone p,
-.container footer .foot_right .dev p {
+#foot .foot_right .asia p,
+#foot .foot_right .buone p,
+#foot .foot_right .dev p {
   font-size: 0.937rem;
   color: #999999;
 }
-.container footer .foot_right .asia,
-.container footer .foot_right .buone {
+#foot .foot_right .asia,
+#foot .foot_right .buone {
   padding-right: 50px;
 }
-.container footer .foot_right .asia p,
-.container footer .foot_right .buone p {
+#foot .foot_right .asia p,
+#foot .foot_right .buone p {
   padding-right: 10px;
 }
-.container footer .foot_right .dev p {
+#foot .foot_right .dev p {
   padding-right: 10px;
 }/*# sourceMappingURL=style.css.map */
