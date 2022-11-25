@@ -6,6 +6,7 @@ html,p,span,h1,h2,li{
     font-family: 'Noto Sans KR', sans-serif;
 }
 /* 공통클래스 */
+.inner{width: 1300px; margin: 0 auto;}
 .dnone{display: none;}
 .opa0{opacity: 0;}
 .df{display: flex;}
