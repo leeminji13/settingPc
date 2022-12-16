@@ -186,10 +186,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 80px;
+        height: 0;
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        transition-duration: 0.3s;
+    }
+    .height80{
+        height: 80px;
+        overflow: unset;
     }
 }
 #swp{
